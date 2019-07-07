@@ -10,7 +10,6 @@ const httpTrigger: AzureFunction = async function(
   context: Context,
   req: HttpRequest
 ): Promise<void> {
-  context.log("HTTP trigger function processed a request.");
   const { lat, long } = req.query;
 
   if (!lat || !long) {

@@ -92,3 +92,7 @@ bin
 obj
 appsettings.json
 local.settings.json
+
+# VS Code
+.vscode
+*.code-workspace
