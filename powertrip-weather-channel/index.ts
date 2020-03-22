@@ -2,7 +2,7 @@ import got = require("got");
 
 import { AzureFunction, Context, HttpRequest } from "@azure/functions";
 
-const API_KEY = "4afc5e1e71b1a9d4048c5caa0dcba938";
+const API_KEY = process.env.DARKSKY_API_KEY;
 const BASE_URL = "https://api.darksky.net/forecast/";
 const QUERY_STRING = "exclude=[minutely,hourly,daily,alerts,flags]&units=auto";
 
