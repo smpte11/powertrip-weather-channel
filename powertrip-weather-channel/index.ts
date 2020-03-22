@@ -1,4 +1,4 @@
-import got = require("got");
+import got from "got";
 
 import { AzureFunction, Context, HttpRequest } from "@azure/functions";
 
